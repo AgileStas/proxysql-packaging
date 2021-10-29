@@ -79,6 +79,7 @@ export CXX=${CXX:-g++}
 export CFLAGS=${CFLAGS:-}
 export CXXFLAGS=${CXXFLAGS:-}
 export MAKE_JFLAG=-j4
+export EXTRALINK=-lzstd
 
 # Create a temporary working directory
 BASEINSTALLDIR="$(cd "$WORKDIR" && TMPDIR="$WORKDIR_ABS" mktemp -d proxysql-build.XXXXXX)"
